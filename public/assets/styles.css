@@ -1,0 +1,99 @@
+*{
+    font-family: monospace,sans-serif;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+body{
+    background: linear-gradient(210deg, #48c6ef, #6f86d6);
+    color: #989898;
+}
+
+form{
+    display: flex;
+    justify-content:space-around;
+}
+
+#todo{
+    position: relative;
+    background: white;
+    width: 40%;
+    border-radius: 40px;
+    margin: 100px auto;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(25, 25, 25, 0.25);
+}
+
+input[type="text"]{
+    border: #e3e3e3 1px solid;
+    border-radius: 2rem;
+    outline: 0;
+    width: 60%;
+    padding: 20px;
+    color: #989898;
+}
+
+input[type="text"]:focus{
+    border: #a1c4fd 1px solid;
+}
+
+button{
+    padding: 20px;
+    width: 30%;
+    border: #a1c4fd 1px solid;
+    color:#a1c4fd;
+    border-radius: 2rem;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #a1c4fd;
+    color: white;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    width: 100%;
+    padding: 20px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+li:hover{
+    text-decoration: line-through;
+    background: rgba(0,0,0,0.2);
+}
+
+
+@media(max-width:1200px){
+    *{
+        font-size: 16px;
+    }
+    #todo{
+        width: 55%;
+    }
+}
+
+@media(max-width:800px){
+    *{
+        font-size: 16px;
+    }
+    #todo{
+        width: 90%;
+    }
+}
+
+@media(max-width:480px){
+    *{
+        font-size: 12px;
+    }
+    button{
+        padding: 0px;
+    }
+}

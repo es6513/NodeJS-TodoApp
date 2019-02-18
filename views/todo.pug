@@ -1,0 +1,17 @@
+html
+  head
+    title Todo App by NodeJS
+    script(src="https://code.jquery.com/jquery-3.3.1.min.js"
+          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+          crossorigin="anonymous")
+    script(src="/assets/todo-list.js")
+    link(rel="stylesheet", href="/assets/styles.css")
+  body
+    div(id="todo")
+      form
+        input(type="text" name="item" placeholder="Add item" required)
+        button(type="submit") Add Item
+      ul          
+        - for(let i=0;i<todos.length;i++){
+          li(todo_id=todos[i]._id)= todos[i].item
+        - }
