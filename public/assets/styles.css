@@ -41,6 +41,7 @@ button{
     padding: 20px;
     width: 30%;
     border: #a1c4fd 1px solid;
+    outline: 0;
     color:#a1c4fd;
     border-radius: 2rem;
     background: #ffffff;
